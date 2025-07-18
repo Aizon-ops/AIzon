@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
 
     // Category filter
     if (category && category !== 'all') {
-      query.category = category;
+      query.category = { $eq: category };
     }
 
     const products = await Product.find(query)
