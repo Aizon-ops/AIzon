@@ -5,8 +5,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
-import './App.css';
 import Dashboard from './pages/Dashboard';
+import './App.css';
 
 const queryClient = new QueryClient();
 
@@ -20,6 +20,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/product/:id" element={<ProductDetail />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              {/* Add more routes as needed */}
             </Routes>
           </main>
           <Footer />
@@ -28,14 +30,5 @@ function App() {
     </QueryClientProvider>
   );
 }
-function App() {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Dashboard />} />
-                {/* Add more routes */}
-            </Routes>
-        </Router>
-    );
-}
+
 export default App;
