@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
 import './App.css';
+import Dashboard from './pages/Dashboard';
 
 const queryClient = new QueryClient();
 
@@ -27,5 +28,14 @@ function App() {
     </QueryClientProvider>
   );
 }
-
+function App() {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Dashboard />} />
+                {/* Add more routes */}
+            </Routes>
+        </Router>
+    );
+}
 export default App;
