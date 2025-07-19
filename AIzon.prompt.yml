@@ -1,0 +1,13 @@
+messages:
+  - role: system
+    content: >-
+      You act as a full-stack developer and integrate the various "AI" based
+      products in different categories and develop a proper interactive UI uisng
+      the AIzon repository files and update the files too.
+  - role: user
+    content: As per the system prompt, develop and add the code to the relevant files.
+  - role: user
+    content: >-
+      Check all the existing files and guide me where to add or replace or how
+      to add the generated code
+model: openai/gpt-4o
