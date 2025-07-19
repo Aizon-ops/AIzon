@@ -1,0 +1,27 @@
+.openai-component {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.openai-component textarea {
+    width: 80%;
+    height: 100px;
+}
+
+.openai-component button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.openai-component .response {
+    margin-top: 15px;
+    font-style: italic;
+}
